@@ -70,7 +70,7 @@ void Treadmill::setSpeed(double S) {
 }
 
 double Treadmill::getSpeed() {
-	return S;
+	return speed;
 }
 
 void Treadmill::setIncline(double I) {
