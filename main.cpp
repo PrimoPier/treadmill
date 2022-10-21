@@ -1,10 +1,3 @@
-//============================================================================
-// Name        : Treadmill.cpp
-// Author      : Elliot McIlwain
-// Class	   : CPSC 246 (11 AM)
-// Description : The purpose of this code is to create a program using classes that contains the necessary data to operate a treadmill system.
-//============================================================================
-
 #include <iostream>
 using namespace std;
 
@@ -90,6 +83,6 @@ int Treadmill::getCalBurned() {
 }
 
 void Treadmill::printTreadmill(double S, double I, double C) {
-	cout << "Treadmill is set with max speed of " << Treadmill::getSpeed(S) << " mph, & maximum incline of " << Treadmill::getIncline(I) << " degrees." << endl;
-	cout << "Client has burned " << Treadmill::getCalBurned(C) << " calories.";
+	cout << "Treadmill is set with max speed of " << Treadmill::getSpeed() << " mph, & maximum incline of " << Treadmill::getIncline() << " degrees." << endl;
+	cout << "Client has burned " << Treadmill::getCalBurned() << " calories.";
 }
