@@ -1,3 +1,10 @@
+//============================================================================
+// Name        : Treadmill.cpp
+// Author      : Elliot McIlwain
+// Class	   : CPSC 246 (11 AM)
+// Description : The purpose of this code is to create a program using classes that contains the necessary data to operate a treadmill system.
+//============================================================================
+
 #include <iostream>
 using namespace std;
 
@@ -7,11 +14,11 @@ public:
 	Treadmill(double, double);
 	Treadmill();
 	void setSpeed(double);
-	double getSpeed(double);
+	double getSpeed();
 	void setIncline(double);
-	double getIncline(double);
+	double getIncline();
 	void setCalBurned(int);
-	int getCalBurned(double);
+	int getCalBurned();
 	void printTreadmill(double, double, double);
 private:
 	double speed, incline;
@@ -41,7 +48,7 @@ int main() {
 	return 0;
 }
 
-Treadmill::Treadmill(double S, double I, double C) {
+Treadmill::Treadmill(double S, double I, int C) {
 	speed = S;
 	incline = I;
 	calBurned = C;
@@ -62,24 +69,24 @@ void Treadmill::setSpeed(double S) {
 	speed = S;
 }
 
-double Treadmill::getSpeed(double S) {
-	return Treadmill::setSpeed(S);
+double Treadmill::getSpeed() {
+	return S;
 }
 
 void Treadmill::setIncline(double I) {
 	incline = I;
 }
 
-double Treadmill::getIncline(double I) {
-	return Treadmill::setIncline(I);
+double Treadmill::getIncline() {
+	return incline;
 }
 
 void Treadmill::setCalBurned(int C) {
 	calBurned = C;
 }
 
-int Treadmill::getCalBurned(double C) {
-	return Treadmill::setCalBurned(C);
+int Treadmill::getCalBurned() {
+	return calBurned;
 }
 
 void Treadmill::printTreadmill(double S, double I, double C) {
